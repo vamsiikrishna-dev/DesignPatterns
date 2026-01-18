@@ -1,0 +1,1 @@
+### This folder contains the 3rd party SDKs or APIs that helps to connect to the external services.

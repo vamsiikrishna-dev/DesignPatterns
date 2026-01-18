@@ -33,6 +33,16 @@ request = builder \
     .build()
 ```
 
+### Structural Patterns
+
+#### 🔌 [Adapter Pattern](./Adapter/)
+Unify incompatible cloud storage APIs with a common interface.
+```python
+s3_adapter = S3ClientAdapter(s3_client)
+azure_adapter = AzureBlobClientAdapter(azure_client)
+s3_adapter.upload_file("bucket1", "file1.txt", "data1")
+```
+
 ## 🚀 Quick Start
 
 1. Clone the repository:
