@@ -7,5 +7,5 @@ class IFileRepository(ABC):
         pass
 
     @abstractmethod
-    def read_file(self, file_name, data):
+    def read_file(self, file_name):
         pass
