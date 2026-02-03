@@ -21,7 +21,7 @@ class ParkingFloor():
         if empty_slots:
             slot = empty_slots[0]
             slot.set_state(ParkingSlotState.FILLED)
-            return TicketManager.get_instance().create_ticket(vehicle_id,slot.get_id(), date)
+            return TicketManager.get_instance().create_ticket(vehicle_id,slot.get_id(), vehicle_type, date)
             
         else:
             ConsoleLogger.get_instance().log("No slot available for the vehicle type")
